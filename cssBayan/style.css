@@ -39,22 +39,20 @@ h1, h2 {
   transform: rotate(45deg);
   transition: 0.2s;
 }
-
-
 /************************************/
 
 /*Active effects*/
-.meme-container:has(.meme-checkbox:checked) .meme-img {
+.meme-container:has(.meme-radio:checked) .meme-img {
   width: 20vw;
   height: 20vw;
 }
 
-.meme-label:has(.meme-checkbox:checked) > .meme-icon {
+.meme-label:has(.meme-radio:checked) > .meme-icon {
   transform: rotate(45deg);
   transition: 0.2s;
 }
 
-.meme-label:has(.meme-checkbox:checked) > .meme-title {
+.meme-label:has(.meme-radio:checked) > .meme-title {
   color: black;
 }
 /************************************/
@@ -67,8 +65,7 @@ h1, h2 {
                        "meme-img  meme-img";
 }
 
-
-.meme-checkbox {
+.meme-radio {
   display: none;
 }
 
