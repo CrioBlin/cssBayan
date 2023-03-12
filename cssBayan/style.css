@@ -4,14 +4,57 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 3rem;
+  margin: 0 auto;
+  width: 50vw;
 } 
 
-h1, h2 {
+.header {
+  margin-top: 3%;
+}
+
+h1 {
   margin: 0;
+}
+
+.meme-container {
+  margin: 3% 0;
+  border-top: 0.1rem solid grey;
+}
+
+.meme-label {
+  display: grid; 
+  grid-template-columns: auto 10%;
+  grid-template-areas: "meme-text meme-icon"
+                       "meme-img  meme-img";
+}
+
+.meme-radio {
+  display: none;
+}
+
+.meme-title {
+  grid-area: meme-text;
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 800;
+  color: #0059d9;
+}
+
+.meme-icon {
+  grid-area: meme-icon;
+  display: none;
+  justify-self: end;
+  transition: 0.2s;
+}
+
+.meme-img {
+  grid-area: meme-img;
+  justify-self: center;
+  width: 0;
+  height: 0;
 }
 
 /*Hover effects*/
@@ -56,38 +99,3 @@ h1, h2 {
   color: black;
 }
 /************************************/
-
-.meme-label {
-  display: grid; 
-  width: 30vw;
-  grid-template-columns: auto 10%;
-  grid-template-areas: "meme-text meme-icon"
-                       "meme-img  meme-img";
-}
-
-.meme-radio {
-  display: none;
-}
-
-.meme-title {
-  grid-area: meme-text;
-  align-self: center;
-  margin: 0;
-  font-size: 2em;
-  font-weight: 800;
-  color: #0059d9;
-}
-
-.meme-icon {
-  grid-area: meme-icon;
-  display: none;
-  justify-self: end;
-  transition: 0.2s;
-}
-
-.meme-img {
-  grid-area: meme-img;
-  justify-self: center;
-  width: 0;
-  height: 0;
-}
