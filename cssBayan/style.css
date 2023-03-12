@@ -44,17 +44,17 @@ h1, h2 {
 /************************************/
 
 /*Active effects*/
-.meme-container:has(#check-meme:checked) .meme-img {
+.meme-container:has(.meme-checkbox:checked) .meme-img {
   width: 20vw;
   height: 20vw;
 }
 
-.meme-label:has(#check-meme:checked) > .meme-icon {
+.meme-label:has(.meme-checkbox:checked) > .meme-icon {
   transform: rotate(45deg);
   transition: 0.2s;
 }
 
-.meme-label:has(#check-meme:checked) > .meme-title {
+.meme-label:has(.meme-checkbox:checked) > .meme-title {
   color: black;
 }
 /************************************/
