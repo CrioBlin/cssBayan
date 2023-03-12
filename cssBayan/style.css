@@ -1,0 +1,43 @@
+:root {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 3rem;
+} 
+
+h1, h2 {
+  margin: 0;
+}
+
+.meme-container:hover .meme-img{
+  width: 100px;
+  height: 100px;
+}
+
+.meme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.meme-header {
+  display: flex;
+  align-items: center;
+}
+
+.meme-title {
+  font-size: 2em;
+}
+
+.meme-img {
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
