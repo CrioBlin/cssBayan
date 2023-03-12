@@ -8,7 +8,7 @@ body {
   width: 50vw;
 } 
 
-.header {
+header {
   margin-top: 3%;
 }
 
@@ -55,6 +55,7 @@ h1 {
   justify-self: center;
   width: 0;
   height: 0;
+  transition: 0.5s;
 }
 
 /*Hover effects*/
@@ -81,6 +82,10 @@ h1 {
   display: block;
   transform: rotate(45deg);
   transition: 0.2s;
+}
+
+.meme-label:hover {
+  cursor: pointer;
 }
 /************************************/
 
