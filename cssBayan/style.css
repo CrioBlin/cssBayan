@@ -14,13 +14,14 @@ h1, h2 {
   margin: 0;
 }
 
-.meme-title {
-  font-size: 2em;
-  font-weight: 800;
+/*Hover effects*/
+.main:hover > .meme-container:not(:hover) .meme-title {
+  color: black;
 }
 
-.meme-container {
-
+.main:hover > .meme-container:not(:hover) .meme-icon {
+  display: block;
+  transition: 0.2s;
 }
 
 .meme-container:hover .meme-img {
@@ -29,25 +30,23 @@ h1, h2 {
   transition: 0.5s;
 }
 
-.main:hover > .meme-container:not(:hover) .meme-title {
-  color: black;
-}
-
 .meme-container:hover .meme-title{
   color: black;
 }
 
+.meme-container:hover .meme-icon {
+  display: block;
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+
+
+/************************************/
+
+/*Active effects*/
 .meme-container:has(#check-meme:checked) .meme-img {
   width: 20vw;
   height: 20vw;
-}
-
-.meme-label {
-  display: grid; 
-  width: 30vw;
-  grid-template-columns: auto 10%;
-  grid-template-areas: "meme-text meme-icon"
-                       "meme-img  meme-img";
 }
 
 .meme-label:has(#check-meme:checked) > .meme-icon {
@@ -58,6 +57,16 @@ h1, h2 {
 .meme-label:has(#check-meme:checked) > .meme-title {
   color: black;
 }
+/************************************/
+
+.meme-label {
+  display: grid; 
+  width: 30vw;
+  grid-template-columns: auto 10%;
+  grid-template-areas: "meme-text meme-icon"
+                       "meme-img  meme-img";
+}
+
 
 .meme-checkbox {
   display: none;
@@ -67,11 +76,14 @@ h1, h2 {
   grid-area: meme-text;
   align-self: center;
   margin: 0;
+  font-size: 2em;
+  font-weight: 800;
   color: #0059d9;
 }
 
 .meme-icon {
   grid-area: meme-icon;
+  display: none;
   justify-self: end;
   transition: 0.2s;
 }
