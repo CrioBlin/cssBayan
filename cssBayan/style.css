@@ -106,6 +106,26 @@ h1 {
 .meme-label:has(.meme-radio:checked) > .meme-title {
   color: black;
 }
+
+.meme-label:active > .meme-title {
+  color: #0059d9;
+}
+
+.meme-label:has(.meme-radio:checked):active > .meme-title {
+  color: #0059d9
+}
+
+.meme-label:active > .meme-icon {
+  fill: #0059d9;
+}
+
+.meme-label:has(.meme-radio:checked):active > .meme-icon {
+  fill: #0059d9;
+}
+
+.meme-label:has(.meme-radio:checked):active > .meme-img {
+  opacity: 80%;
+}
 /************************************/
 
 /*Media queries Desktop*/
